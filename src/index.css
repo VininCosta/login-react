@@ -1,13 +1,76 @@
-body {
+@import 'antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-image: radial-gradient(circle at 50% -20.71%, #ff56ff 0, #c14bff 25%, #783cf2 50%, #1b2cc7 75%, #001fa0 100%);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 450px;
+  margin-top: 100px;
+  background-color: rgb(245, 243, 243);
+  width: 400px;
+  height: 100%;
+  border-radius: 8px;
+}
+.label {
+  width: 300px;
+}
+
+.login-form-button {
+  width: 300px;
+}
+
+.forgot {
+  margin-right: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 46px;
+}
+
+p {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+.icon {
+  font-size: 28px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+
+@media (max-width: 460px) {
+  .form{
+    margin-left: 38px;
+    width: 300px;
+    margin-top: 40px;
+  }
+
+  .label{
+    width: 200px;
+    margin: 15px auto;
+  }
+
+  .login-form-button {
+    width: 200px;
+    margin-left: 20px;
+  }
+  a {
+    margin-left: 5px;
+  }
 }
